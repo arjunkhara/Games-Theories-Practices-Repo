@@ -1,9 +1,4 @@
 # myrepo1
-My Project Repo
+My Project Repository
 
-This is my first project
-
-this is some code
-and this too is some code
-
-<table></table>
+This is my first games programming project, likely in Javascript or Unreal Engine, and this is some <code>code for the project</code> As this course progresses so too I am hoping will my ability to programme a really cool game. I'm currently thinking along the lines of a narrative that allows for several digressions from the main story arc, with user-driven control over story setting and narrative. The primary aim of this game will likely marry digital literacy with the humanities to establish a bridge or confluence of two worlds — a principle that has worked extremely well in the past with respect to game development. I am also aspiring to create a game that can be played offline if, for no other reason, than to increase the likelihood of actual human interaction that will reflect computer-driven engagement. In this regard, I am examining how offline and traditional games are created (Monopoly, Cops and Robbers, Cricket etc.) to understand the deeper fundamentals of gameplay and game design. Ultimately, the practice of game-development is rooted in the principles of consumer engagement and consumer entertainment, and this I am hoping will serve as a mantra — to convert passive recipients of data, into active participants of information.
