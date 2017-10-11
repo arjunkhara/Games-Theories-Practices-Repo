@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" meta name="viewport" device="width=device-width, initial-scale=1">
+    <title>Demo Overview of Game on a Mobile Device</title>
+    <style>
+    body{
+      background: #fafafa;
+      background: url('https://www.qc.com.sg/audiencebar.gif');
+      background-size: cover;
+    }
+
+    .myphone{
+      position: absolute;
+      width: auto;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .themaincontainer{
+      position: absolute;
+       width: 280px;
+       height: 465px;
+       background: none;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+}
+
+      .thecard{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transform-style: preserve-3d;
+        transition: all 0.8s ease;
+      }
+
+      .thecard:hover{
+  transform: rotateY(180deg);
+}
+
+
+    .splashscreen{
+      position: absolute;
+      width: 280px;
+      height: 465px;
+      background: #5fcf80;
+      background: linear-gradient(#E84380, #BE65C2);
+      top: -16px;
+      left: 0px;
+      backface-visibility: hidden;
+      overflow: hidden;
+    text-align: center;
+    font-family: 'Gotham', Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    }
+
+    .backsplashscreen{
+      position: absolute;
+      width: 280px;
+      height: 465px;
+      background: #5fcf80;
+      background: #BE65C2;
+      top: -16px;
+      left: 0px;
+      backface-visibility: hidden;
+      overflow: hidden;
+      transform: rotateY(180deg);
+      text-align: center;
+      font-family: 'Gotham', Roboto, sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .screenwords{
+    }
+
+    .subwords{
+ font-family: 'Gotham', Roboto, sans-serif;
+ font-size: 14px;
+ font-weight: 200;
+ color: #fff;
+    }
+
+    a#beginbtn{
+    font-size: 12px;
+    padding: 0;
+    font-weight: 200;
+    border: 1px solid #fff;
+    padding: 20px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    transition: all 0.3s ease;
+    }
+
+    a#beginbtn:hover{
+      background: #fff;
+      color: #BE65C2;
+    }
+
+    a#locatebtn{
+    font-size: 12px;
+    padding: 0;
+    font-weight: 200;
+    border: 1px solid #fff;
+    padding: 20px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    transition: all 0.3s ease;
+    }
+
+    a#locatebtn:hover{
+      background: #fff;
+      color: #BE65C2;
+    }
+
+    a#selectbtn{
+    font-size: 12px;
+    padding: 0;
+    font-weight: 200;
+    border: 1px solid #fff;
+    padding: 20px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    transition: all 0.3s ease;
+    }
+
+    a#selectbtn:hover{
+      background: #fff;
+      color: #BE65C2;
+    }
+
+    a#paybtn{
+    font-size: 12px;
+    padding: 0;
+    font-weight: 200;
+    border: 1px solid #fff;
+    padding: 20px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    transition: all 0.3s ease;
+    }
+
+    a#paybtn:hover{
+      background: #fff;
+      color: #BE65C2;
+    }
+
+    a#choosebarbtn{
+    font-size: 12px;
+    padding: 0;
+    font-weight: 200;
+    border: 1px solid #fff;
+    padding: 20px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    transition: all 0.3s ease;
+    }
+
+    a#choosebtn:hover{
+      background: #fff;
+      color: #BE65C2;
+    }
+
+    a#chosenbarbtn{
+    font-size: 12px;
+    padding: 0;
+    font-weight: 200;
+    border: 1px solid #fff;
+    padding: 20px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    transition: all 0.3s ease;
+    }
+
+    a#choosebtn:hover{
+      background: #fff;
+      color: #BE65C2;
+    }
+
+    a#chosenbarbtn:hover{
+      background: #fff;
+      color: #BE65C2;
+    }
+
+.myform{
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-family: 'Gotham', Roboto, sans-serif;
+  color: #BE65C2;
+}
+
+.myform:focus{
+  outline: none;
+}
+
+.location{
+  position: absolute;
+  width: 280px;
+  height: 465px;
+  background: #5fcf80;
+  background: #BE65C2;
+  top: -16px;
+  left: 0px;
+text-align: center;
+font-family: 'Gotham', Roboto, sans-serif;
+font-size: 24px;
+font-weight: 500;
+color: #fff;
+display: none;
+}
+
+
+.selections{
+  position: absolute;
+  width: 280px;
+  height: 465px;
+  background: #5fcf80;
+  background: #E84380;
+  top: -16px;
+  left: 0px;
+text-align: center;
+font-family: 'Gotham', Roboto, sans-serif;
+font-size: 24px;
+font-weight: 500;
+color: #fff;
+display: none;
+}
+
+.bars{
+  position: absolute;
+  width: 280px;
+  height: 465px;
+  background: #5fcf80;
+  background: #BE65C2;
+  top: -16px;
+  left: 0px;
+text-align: center;
+font-family: 'Gotham', Roboto, sans-serif;
+font-size: 24px;
+font-weight: 500;
+color: #fff;
+display: none;
+}
+
+
+.chosenbar{
+  position: absolute;
+  width: 280px;
+  height: 465px;
+  background: #5fcf80;
+  background: #BE65C2;
+  top: -16px;
+  left: 0px;
+text-align: center;
+font-family: 'Gotham', Roboto, sans-serif;
+font-size: 18px;
+font-weight: 500;
+color: #fff;
+display: none;
+}
+
+.barbutton{
+  font-size: 12px;
+  padding: 0;
+  font-weight: 600;
+  border: 1px solid #fff;
+  padding: 20px;
+  max-width: 50%;
+  text-align: center;
+  margin: 10px auto;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  background: none;
+  transition: all 0.3s ease;
+  }
+
+  .barbutton:hover{
+    background: #fff;
+    color: #BE65C2;
+  }
+
+  .payments{
+    position: absolute;
+    width: 280px;
+    height: 465px;
+    background: #5fcf80;
+    background: #E84380;
+    top: -16px;
+    left: 0px;
+  text-align: center;
+  font-family: 'Gotham', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 500;
+  color: #fff;
+  display: none;
+  }
+
+  .thankyou{
+    position: absolute;
+    width: 280px;
+    height: 465px;
+    background: #5fcf80;
+    background: #BE65C2;
+    top: -16px;
+    left: 0px;
+  text-align: center;
+  font-family: 'Gotham', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 500;
+  color: #fff;
+  display: none;
+  }
+
+  img{
+    text-align: center;
+    margin: 10px auto;
+  }
+
+    </style>
+  </head>
+  <body>
+    <div class="myphone">
+<img src="https://www.qc.com.sg/phone-demo.png" width="50%"/>
+<div class="themaincontainer">
+  <div class="thecard" id="thecardid">
+    <div class="splashscreen"><p style="margin-top: 75%; line-height: 0; padding: 0;">social&#9643;ice</p><p style="font-size: 12px; padding: 0; font-weight: 200;">slide. select. showtime.</p></div>
+    <div class="backsplashscreen">
+<p style="margin-top: 75%; line-height: 0; padding: 0; margin-bottom: 30px;"><input class="myform" type="text" placeholder="Sign up / Sign in"/></p>
+<a id="beginbtn">GO</a>
+    </div>
+    </div>
+
+    <div class="location" id="locationid"><p style="margin-top: 75%; line-height: 0; padding: 0; margin-bottom: 30px;"><input class="myform" type="text" placeholder="Enter Location"/></p>
+    <a id="locatebtn">LOCATE</a></div>
+
+    <div class="selections" id="selectionsid">
+      <p style="margin-top: 150px; line-height: 0; padding: 0; margin-bottom: 30px; font-size: 12px !important;"><div id="slidecontainer">Time<br/>
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div></p>
+<p style="line-height: 0; padding: 0; margin-bottom: 30px; font-size: 12px !important;"><div id="slidecontainer">Population<br/>
+<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div></p>
+    <a id="selectbtn">GO</a></div>
+
+    <div class="bars" id="barsid"><p style="margin-top: 35%; line-height: 0; padding: 0; margin-bottom: 30px;"></p>
+    <p class="barbutton">Fat Walrus</p>
+    <p class="barbutton">Brookmill</p>
+    <p class="barbutton">Harry Pothead</p>
+    <a class="barbutton" id="mypantsbtn">Pants & Trousers</a>
+  </div>
+
+
+
+  <div class="chosenbar" id="chosenbarid">
+    <p style="margin-top: 25%; line-height: 1.5; margin-bottom: 30px;">Chosen Bar: Pants & Trousers<br/>Current Pax: 98<br/>Check-in for: 9pm<br/><img src="pantsbar.jpg" width="100%" style="display: block;"/></p>
+  <a id="chosenbarbtn">CHOOSE DRINKS</a>
+</div>
+
+
+
+  <div class="payments" id="paymentsid"><p style="margin-top: 25%; padding: 0; margin-bottom: 30px;">
+    Pre-purchase your drinks from Pants<br/><br/>
+    <input class="myform" type="checkbox" name="drink" value="cocktail">Cocktail<br/>
+    <input class="myform" type="checkbox" name="drink" value="whiskey">Whiskey<br/>
+    <input class="myform" type="checkbox" name="drink" value="shots">Shots<br/>
+    <input class="myform" type="checkbox" name="drink" value="vodka">Vodka<br/>
+    <input class="myform" type="checkbox" name="drink" value="beer">Beer<br/><br/>
+    <input class="myform" type="text" placeholder="Or Top Up Value £"/></p>
+  <a id="paybtn">PAY NOW</a></div>
+
+
+<!--THANK YOU-->
+  <div class="thankyou" id="thankyouid">
+    <p style="margin-top: 15%; line-height: 1.5; margin-bottom: 30px;">Thanks. You're Set!</p>
+    <p style="text-align: center;"><img src="thankyouqrcode.jpg" width="80%" style="display: block;"/></p>
+  <a id="facebookbtn">Share on Facebook</a><br/>
+  <a id="twitterbtn">Share on Twitter</a>
+</div>
+
+  </div>
+</div>
+  </body>
+
+
+
+
+  <script type="text/javascript">
+document.getElementById('beginbtn').onclick = function(){
+  document.getElementById('thecardid').setAttribute("style", "display: none;");
+  document.getElementById('locationid').setAttribute("style", "display: block;");
+}
+  </script>
+
+  <script type="text/javascript">
+document.getElementById('locatebtn').onclick = function(){
+    document.getElementById('selectionsid').setAttribute("style", "display: block;");
+}
+  </script>
+
+  <script type="text/javascript">
+  document.getElementById('selectbtn').onclick = function(){
+      document.getElementById('barsid').setAttribute("style", "display: block;");
+  }
+  </script>
+
+  <script type="text/javascript">
+  document.getElementById('mypantsbtn').onclick = function(){
+      document.getElementById('chosenbarid').setAttribute("style", "display: block;");
+  }
+  </script>
+
+
+  <script type="text/javascript">
+  document.getElementById('chosenbarbtn').onclick = function(){
+      document.getElementById('paymentsid').setAttribute("style", "display: block;");
+  }
+  </script>
+
+
+  <script type="text/javascript">
+  document.getElementById('paybtn').onclick = function(){
+      document.getElementById('thankyouid').setAttribute("style", "display: block;");
+  }
+  </script>
+</html>
