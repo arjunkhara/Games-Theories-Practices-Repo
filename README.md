@@ -24,3 +24,6 @@ The basic setup of snake is coming together in my index.html file. Using jQuery 
 
 
 Committing from this point on will be done via Sourcetree (whenever feasible and efficient). It was explained that while working on JavaScript and HTML-based games, the outdated (but still works) mode would be to test the game on an editor, like Atom, ensure everything works and then copy-paste the source code to the index.html file here on Github. However, when compiling gameplay on Unity or Unreal, every variable change will need to be recorded, which makes this method of commits obsolete and inefficient. Sourcetree solves this problem by running/recording these changes in the background so that there is commit entry at both ends — development and respository. This is extremely useful and I understand now the value of this practice and method within gaming studios and high-level co-ordination projects.
+
+
+How to add a local repository to Sourcetree (Pedro's Recommendation to Research)
