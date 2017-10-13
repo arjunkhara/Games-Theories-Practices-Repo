@@ -35,4 +35,20 @@
 <!--Insert JavaScript / jQuery here and transfer (if required) to separate JS file post-build and sandbox-->
 <!--jQuery library linked to Google library-->
 <script>
+  $(document).ready(function(){
+	var canvas = $("#myCanvas")[0];
+	var canvasContext = canvas.getContext("2d");
+	var canvasWidth = $("#myCanvas").width();
+	var canvasHeight = $("#myCanvas").height();
+    
+  var cellWidth = 10;
+	var directions;
+	var myFood;
+	var myScore;
+  var myLevel;
+    
+   //The body of the snake itself
+	var snake_body;
+    
+  //Function to control and call the snake and its attribute for gameplay
 </script>
