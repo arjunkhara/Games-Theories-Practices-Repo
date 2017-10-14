@@ -27,3 +27,13 @@ Committing from this point on will be done via Sourcetree (whenever feasible and
 
 
 How to add a local repository to Sourcetree (Pedro's Recommendation to Research)
+The process of adding a local repository to Sourcetree on Mac, as it turned out, was relatively simple, and after some searching online and experimenting with the app, I figured out how to do it. The steps are as follows:
+1. Open Finder and locate the folder that you want to add
+2. Open Sourcetree and locate the Bookmarks Window
+3. Drag and drop the folder into Sourcetree's Bookmarks Window
+4. On the pop-up prompt dialog box click 'Add Repository'
+5. Navigate to the tab which says 'Add Working Copy'
+6. Your local repository will be available
+The process is useful when moving a repository from a local machine to Github (Sourcetree interface). However, it is better to create the repository (where feasible) from scratch on Github via Sourcetree to avoid any prior versions that may have been altered on the local machine but have not yet been uploaded. In this case, when a local repository is added to Sourcetree, Sourcetree will only receive the most up-to-date folder contents from the local machine.
+
+
