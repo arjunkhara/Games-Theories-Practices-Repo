@@ -12,20 +12,22 @@
     body {
   background-color: #ffc728;
 }
-      
+
 /*This is the canvas style in which the snak game will be played bounded by the dark grey border */
     #myCanvas {
       display: block;
       margin: 30px auto;
       border: 1px solid #222;
 }
+
+#theSnake{}
     </style>
   </head>
 
 
   <body>
 <!--The canvas width and height can be changed here, it works best as a square-->
-    <canvas id="myCanvas" width="800" height="800"></canvas>
+    <canvas id="myCanvas" width="600" height="600"></canvas>
   </body>
 </html>
 
@@ -40,15 +42,53 @@
 	var canvasContext = canvas.getContext("2d");
 	var canvasWidth = $("#myCanvas").width();
 	var canvasHeight = $("#myCanvas").height();
-    
+
   var cellWidth = 10;
 	var directions;
 	var myFood;
 	var myScore;
   var myLevel;
-    
+
    //The body of the snake itself
-	var snake_body;
-    
+	var snake_body
+
   //Function to control and call the snake and its attribute for gameplay
-</script>
+  function init()
+	{
+		directions = "right"; //default direction
+		create_snake();
+		create_food(); //Now we can see the food particle
+		//finally lets display the score
+		myScore = 0;
+     myLevel = 1;
+
+		//Lets move the snake now using a timer which will trigger the paint function
+		//every 60ms
+		if(typeof game_loop != "undefined") clearInterval(game_loop);
+		game_loop = setInterval(paint, 100);
+	}
+	init();
+
+	function create_snake()
+	{
+		var length = 5; //Length of the snake
+		snake_body = []; //Empty array to start with
+		for(var i = length-1; i>=0; i--)
+		{
+			//This will create a horizontal snake starting from the top left
+			snake_body.push({x:i, y:0});
+		}
+	}
+
+	//Lets create the food now
+	function create_food()
+	{
+		myFood = {
+			x: Math.round(Math.random()*(canvasWidth-cellWidth)/cellWidth),
+			y: Math.round(Math.random()*(canvasHeight-cellWidth)/cellWidth),
+		};
+		//This will create a cell with x/y between 0-44
+		//Because there are 45(450/10) positions accross the rows and columns
+	}
+	  
+	  /* LEARNINGS AND REFERENCES FOR THIS CODE BASE CAME FROM CODEPEN, YOUTUBE, AND CODECADEMY. CITATION AND ACADEMIC REFERENCING HAS BEEN FILED WITHIN THE README FILE OF THIS REPOSITORY */
