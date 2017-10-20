@@ -48,3 +48,6 @@ The build broke again today and the game failed to initialise properly. The erro
 
 Today Andy taught us about how to download / clone a project from his GitHub repository and fork it to our repositories for analysis. We were also exposed to the GitHub command line, which was useful. Andy made a point not to commit an Library and/or Temp folders from Unity to GitHub, and to only commit assets. In addition those looking at your GitHub profile for progress will not take kindly to unnecessary bloat files. Andy also showed us a Poing demo, which is the GitHub repository I have downloaded / cloned to my local machine.
 
+
+Based on the need to keep consistency across team usage for GitHub, I have learned how to rename existing files in GitHub. The file that contained my code for the snake game was named index.html. It has now been renamed snakeJStrial.html. Naming convention is important for keeping not only consistency but clarity in version control. The practice of committing requires more than just continuously saving and monitoring your changes; it is also a collaborative tool, which means other team members need to know what I am working on.
+
