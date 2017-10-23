@@ -24,9 +24,33 @@ var player = new Player();
 var computer = new Computer();
 var ball = new Ball(100, 300);
 
+// Variables added for context to paddles X 2 and ball for player versus JS engine
+var keysDown = {};
+var render = function () { //the render function generates the game assets
+    context.fillStyle = "#eeeeee"; //background colour of arena
+    context.fillRect(0, 0, width, height);
+    player.render();
+    computer.render();
+    ball.render();
+};
+
+var update = function () {
+    player.update();
+    computer.update(ball);
+    ball.update(player.paddle, computer.paddle);
+};
+
+var step = function () {
+    update();
+    render();
+    animate(step);
+};
+
+
+---X---NEXT BLOCK HERE---X---
 
 </script>
-/* BEGIN JAVASCRIPT */
+/* END JAVASCRIPT */
 
 /* Sources, Citations, and References for this Project: */
 // Please note that while I have worked out how to build this game on JavaScript, much of this knowledge, code snippets, and code blocks have come from a variety of sources listed below. I have made several additions and modifications to the code above but without these sources and code blocks this game, and my learning, would be incomplete. Thank you to all who have been kind enough to teach / show me how to learn to build this game on JS.
