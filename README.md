@@ -59,18 +59,18 @@ Through the introduction of Kanban boards to the games project I am beginning to
 
 Today I was able to write my first simple program in C#. I am learning from a book called 'Learn C# in One Day and Learn it Well' by Jamie Chan. Based on the explanations in the book and in the C# tutorials I am attending online, I was able to make the compiler spit out the words 'Welcome to Space Invaders'. I have shared this codebase with my team on our team respository, and have placed the code snippet in here as well.<br/>
 /---BEGIN CODE---/ <br/>
-using System; //using is a directive that tells the compiler the program is using a namespace called system<br/>
-using Systems.Collections.Generic;<br/>
-using System.Ling;<br/>
-using System.Text;<br/>
-using System.Threading.Tasks;<br/>
-namespace WelcomeGreeting { <br/>
-class Program{ <br/>
-static void Main(string[] args){ <br/>
-Console.WriteLine("Welcome to Space Invaders Meets Bit Runner"); <br/>
-Console.Read(); <br/>
-} <br/>
-} <br/>
-}<br/>
-/---END CODE---/ }<br/>
+`using System; //using is a directive that tells the compiler the program is using a namespace called system`<br/>
+`using Systems.Collections.Generic;`<br/>
+`using System.Ling;`<br/>
+`using System.Text;`<br/>
+`using System.Threading.Tasks;`<br/>
+`namespace WelcomeGreeting {`<br/>
+`class Program{`<br/>
+`static void Main(string[] args){`<br/>
+`Console.WriteLine("Welcome to Space Invaders Meets Bit Runner");`<br/>
+`Console.Read();`<br/>
+`}`<br/>
+`}`<br/>
+`}`<br/>
+/---END CODE---/<br/>
 I am also learning how to markup my GitHub repo entries through HTML and basic GitHub text syntax, which I will be sharing with my team on our repo.
