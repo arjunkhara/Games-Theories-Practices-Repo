@@ -74,3 +74,6 @@ Today I was able to write my first simple program in C#. I am learning from a bo
 `}`<br/>
 /---END CODE---/<br/>
 I am also learning how to markup my GitHub repo entries through HTML and basic GitHub text syntax, which I will be sharing with my team on our repo.
+
+
+This cheatsheet published by GitHub is extremely useful for marking up and marking down code and comments to share with teams. There are other sources as well but I have found that marking up code in this manner (as prescribed by GitHub) is almost an industry-standard for games studio. I would like to get used to this method and process as quickly as possible. Here is the URL: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
