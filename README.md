@@ -56,3 +56,21 @@ My team for introduction to programming has been created and each of the four me
 
 
 Through the introduction of Kanban boards to the games project I am beginning to understand the value of team projects and accountability. With the Kanban board setup I am now beginning to understand the need for project resource allocation and committing. A Kanban board not only provides a visual display of the tasks that need doing, but also provides a useful prediction of the project's outcome, especially nearer to the project's deadline. With the ability to assign each person's profile to a task on Trello, the Kanban board also affords a high degree of accountability for the project. Game-design and game building has much more to it than simply typing code and clicking buttons. The idea of narrative, concept development, story and mood boarding, and the all-integral aspect of teamwork would be at worst absent, at best sidelined without an effective team management system. The Kanban board also shows the degrees of engagement and rate of progress for each team member as the project proceeds. I will be using this system to experiment when building my side project game of pong to see if Kanban or similar management tools can work for one person (eg a freelancer or a researcher). I am quite confident, given what I've learned, that there are applications to single-person / individual game developers.
+
+Today I was able to write my first simple program in C#. I am learning from a book called 'Learn C# in One Day and Learn it Well' by Jamie Chan. Based on the explanations in the book and in the C# tutorials I am attending online, I was able to make the compiler spit out the words 'Welcome to Space Invaders'. I have shared this codebase with my team on our team respository, and have placed the code snippet in here as well.<br/>
+/---BEGIN CODE---/ <br/>
+using System; //using is a directive that tells the compiler the program is using a namespace called system<br/>
+using Systems.Collections.Generic;<br/>
+using System.Ling;<br/>
+using System.Text;<br/>
+using System.Threading.Tasks;<br/>
+namespace WelcomeGreeting { <br/>
+class Program{ <br/>
+static void Main(string[] args){ <br/>
+Console.WriteLine("Welcome to Space Invaders Meets Bit Runner"); <br/>
+Console.Read(); <br/>
+} <br/>
+} <br/>
+}<br/>
+/---END CODE---/ }<br/>
+I am also learning how to markup my GitHub repo entries through HTML and basic GitHub text syntax, which I will be sharing with my team on our repo.
