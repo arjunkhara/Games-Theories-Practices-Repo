@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Pong Practice Game</title>
+    <style></style>
+  </head>
+  <body>
+  </body>
+</html>
+
+/* BEGIN JAVASCRIPT */
+<script>
+var animate = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
+        window.setTimeout(callback, 1000 / 60)
+    };
+var canvas = document.createElement("canvas");
+var width = 600; //width of the play area
+var height = 600; //height of the play area
+canvas.width = width;
+canvas.height = height;
+var context = canvas.getContext('2d'); //set 2D to keep perspective on - different apis, like processing cairo graphics lib
+var player = new Player();
+var computer = new Computer();
+var ball = new Ball(100, 300);
+
+
+</script>
+/* BEGIN JAVASCRIPT */
+
+/* Sources, Citations, and References for this Project: */
+// Please note that while I have worked out how to build this game on JavaScript, much of this knowledge, code snippets, and code blocks have come from a variety of sources listed below. I have made several additions and modifications to the code above but without these sources and code blocks this game, and my learning, would be incomplete. Thank you to all who have been kind enough to teach / show me how to learn to build this game on JS.
+//• Ping Pong on code pen, URL: https://codepen.io/yashbhardwaj/pen/iqBac
+//• Kyle Simpson, You Don't Know JS, (on GitHub) URL: https://github.com/getify
+//• Pong Clone in JS, URL: https://robots.thoughtbot.com/pong-clone-in-javascript
