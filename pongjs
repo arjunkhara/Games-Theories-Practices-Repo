@@ -47,7 +47,37 @@ var step = function () {
 };
 
 
----X---NEXT BLOCK HERE---X---
+//created a function for the pong paddles with codebase help from CodePen tutorial
+function pongPaddle(x, y, width, height) {
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+    this.x_speed = 0;
+    this.y_speed = 0;
+}
+
+pongPaddle.prototype.render = function () {
+    context.fillStyle = "#000"; //colour of the paddles
+    context.fillRect(this.x, this.y, this.width, this.height);
+};
+
+pongPaddle.prototype.move = function (x, y) {
+    this.x += x;
+    this.y += y;
+    this.x_speed = x;
+    this.y_speed = y;
+    if (this.x < 0) {
+        this.x = 0;
+        this.x_speed = 0;
+    } else if (this.x + this.width > 400) {
+        this.x = 400 - this.width;
+        this.x_speed = 0;
+    }
+};
+
+---X---NEXT---X---
+
 
 </script>
 /* END JAVASCRIPT */
