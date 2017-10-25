@@ -76,7 +76,33 @@ pongpaddle.prototype.move = function (x, y) {
     }
 };
 
----X---NEXT---X---
+//function for the pseudo AI
+function aicomputer() {
+    this.pongpaddle = new pongpaddle(175, 10, 50, 10);
+}
+
+aicomputer.prototype.render = function () {
+    this.pongpaddle.render();
+};
+
+aicomputer.prototype.update = function (ball) {
+    var x_pos = ball.x;
+    var diff = -((this.paddle.x + (this.pongpaddle.width / 2)) - x_pos);
+    if (diff < 0 && diff < -4) {
+        diff = -5;
+    } else if (diff > 0 && diff > 4) {
+        diff = 5;
+    }
+    this.pongpaddle.move(diff, 0);
+    if (this.pongpaddle.x < 0) {
+        this.pongpaddle.x = 0;
+    } else if (this.pongpaddle.x + this.paddle.width > 600) {
+        this.pongpaddle.x = 600 - this.paddle.width;
+    }
+};
+
+
+
 
 
 </script>
