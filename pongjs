@@ -101,7 +101,27 @@ aicomputer.prototype.update = function (ball) {
     }
 };
 
+//Execute human player controls function using this
+function humanPlayer() {
+    this.pongpaddle = new pongpaddle(175, 580, 50, 10);
+}
 
+humanPlayer.prototype.render = function () {
+    this.paddle.render();
+};
+
+humanPlayer.prototype.update = function () {
+    for (var key in keysDown) {
+        var value = Number(key);
+        if (value == 37) {
+            this.pongpaddle.move(-4, 0);
+        } else if (value == 39) {
+            this.pongpaddle.move(4, 0);
+        } else {
+            this.pongpaddle.move(0, 0);
+        }
+    }
+};
 
 
 
